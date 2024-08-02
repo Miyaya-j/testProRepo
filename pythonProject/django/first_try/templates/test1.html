@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>love client2</div>
+    <div>test1:<br>{{n1}}</div>
+    <div>{{n2}}</div>
+<!--    调用列表-->
+    <div><br>test2:<br>{{n2.0}}</div>
+    <div>{{n2.2}}</div>
+
+<!--    调用字典-->
+    <div>
+        <br>test3:<br>
+        {{n3.hyq}}<br>
+        {{n3.zlp}}
+    </div>
+
+<!--    列表的循环-->
+    <div><br>test4:</div>
+    <div>
+        {% for item in n2 %}
+            <span>{{item}}<br></span>
+        {% endfor %}
+    </div>
+
+<!--    字典的循环-->
+    <div><br>test5:</div>
+    <div>
+        {% for k,v in n3.items %}
+            <li>{{k}}={{v}}</li>
+        {% endfor %}
+    </div>
+    <div><br>test6:</div>
+    {% for item in n4 %}
+<!--        两种写法都可以-->
+<!--    写法1-->
+        {% for k,v in item.items %}
+            <li>{{k}}={{v}}</li>
+        {% endfor %}
+<!--    写法2-->
+<!--    <li>{{item.zlp}}=>{{item.hyq}}</li>-->
+<!--        <br>-->
+    {% endfor %}
+{#    <img src="/static/img/neymar.jpg" alt="" style="width: 100%">#}
+      <img src="{% static 'img/neymar.jpg' %}" alt="" style="width:100%">
+</body>
+</html>

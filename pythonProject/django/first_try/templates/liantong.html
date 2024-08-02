@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div><br>test6:</div>
+    {% for item in xinwenlist %}
+<!--        两种写法都可以-->
+<!--    写法1-->
+        {% for k,v in item.items %}
+            <li>{{k}}={{v}}</li>
+        {% endfor %}
+<!--    写法2-->
+<!--    <li>{{item.title}}=>{{item.time}}</li>-->
+<!--        <br>-->
+    {% endfor %}
+{#    <img src="/static/img/neymar.jpg" alt="" style="width: 100%">#}
+      <img src="{% static 'img/neymar.jpg' %}" alt="" style="width:100%">
+
+</body>
+</html>

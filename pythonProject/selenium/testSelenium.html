@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!--<iframe width="100%"></iframe>-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <button>登录1</button>
+    <button>登录2</button>
+    <button class="btn btn-special" onclick="myFunction()" id="test3">登录3</button>
+    <button>登录4</button>
+
+
+         <label for="cars">请选择一个汽车品牌：</label>
+             <select name="cars" id="cars">
+                  <option value="audi">奥迪</option>
+                  <option value="byd">比亚迪</option>
+                  <option value="geely">吉利</option>
+                  <option value="volvo">沃尔沃</option>
+                  <option value="bc">奔驰</option>
+                  <option value="bmw">宝马</option>
+                  <option value="lsls">劳斯莱斯</option>
+            </select>
+
+
+
+</body>
+<script>
+function myFunction(){
+	document.getElementById("test3").innerHTML="Hello World";
+    alert('你点了我登录3')
+}
+</script>
+</html>
