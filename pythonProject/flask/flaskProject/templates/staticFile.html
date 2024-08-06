@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <script type = "text/javascript" 
+             src = "{{ url_for('static', filename = 'staticFile.js') }}" >
+         
+     </script>
+</head>
+<body>
+{#index.html中的HTML按钮的OnClick事件调用staticFile.js中定义的javascript函数#}
+<input type = "button" onclick = "staticFile()" value = "Say staticFile" />
+</body>
+</html>
