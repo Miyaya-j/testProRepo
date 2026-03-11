@@ -1,8 +1,8 @@
 print('tttttttttttttttttttttttttttt')
 print('i wanna test the aiforreview func')
 print(888888888888888888888888888)
-def a(b):
+def aaaa(b):
     b = b/2
     return b
 
-print(a(9))
+print(aaaa(9))
