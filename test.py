@@ -6,3 +6,4 @@ def aaaa(b):
     return b
 
 print(aaaa(9))
+print(10/0)
